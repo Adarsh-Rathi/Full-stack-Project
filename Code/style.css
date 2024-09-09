@@ -1,0 +1,154 @@
+/* 
+  Reset CSS styles to ensure consistency across browsers
+  (margin, padding, font family, and box sizing)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* 
+    Container styles (full-width, min-height, background gradient, and padding)
+  */
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6c768a, #240a2b);
+    padding: 10px;
+  }
+  
+  /* 
+    Todo app container styles (width, max-width, background color, margin, and padding)
+  */
+  .todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: rgb(255, 255, 255);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  /* 
+    Todo app header styles (color, display, align-items, and margin-bottom)
+  */
+  .todo-app h2 {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* 
+    Todo app header image styles (width and margin-left)
+  */
+  .todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  /* 
+    Row styles (display, align-items, justify-content, background, border-radius, and padding-left)
+  */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d2d2d2;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  /* 
+    Input field styles (flex, border, outline, background, and padding)
+  */
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+  }
+  
+  /* 
+    Button styles (border, outline, padding, background, color, font-size, cursor, and border-radius)
+  */
+  button {
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    background: #ff0404;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  /* 
+    Unordered list item styles (list-style, font-size, padding, user-select, cursor, and position)
+  */
+  ul li {
+    list-style: none;
+    font-size: 12px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* 
+    Unordered list item pseudo-element styles (content, position, height, width, border-radius, background-image, and background-size)
+  */
+  ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(crop.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  
+  /* 
+    Checked list item styles (color, text-decoration)
+  */
+  ul li.checked {
+    color: rgb(18, 3, 103);
+    text-decoration: line-through;
+  }
+  
+  /* 
+    Checked list item pseudo-element styles (background-image)
+  */
+  ul li.checked::before {
+    background-image: url(checked.png);
+  }
+  
+  /* 
+    List item span styles (position, width, top, right, height, font-size, color, line-height, text-align, and border-radius)
+  */
+  ul li span {
+    position: absolute;
+    width: 40px;
+    top: 4px;
+    right: 0;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  /* 
+    List item span hover styles (background-color)
+  */
+  ul li span:hover {
+    background-color: #edeef0;
+  }

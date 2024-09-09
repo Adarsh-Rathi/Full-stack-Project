@@ -1,0 +1,84 @@
+<!-- 
+  HTML document declaration, specifying the language as English
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  Head section, containing metadata about the document
+-->
+<head>
+  <!-- 
+    Character encoding declaration (UTF-8)
+  -->
+  <meta charset="UTF-8">
+  
+  <!-- 
+    Viewport settings for responsive design (width and initial scale)
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 
+    Title of the page (To do list)
+  -->
+  <title>To do list</title>
+  
+  <!-- 
+    Link to the external stylesheet (style.css)
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 
+  Body section, containing the content of the page
+-->
+<body>
+  <!-- 
+    Container element, wrapping the entire application
+  -->
+  <div class="container">
+    <!-- 
+      Todo app container element, containing the app's content
+    -->
+    <div class="todo-app">
+      <!-- 
+        Header element, containing the app's title and logo
+      -->
+      <h2>To-Do List</h2> 
+      <img src="To do list.png" height="50px" width="50px"></h2> 
+      
+      <!-- 
+        Row element, containing the input field and add button
+      -->
+      <div class="row">
+        <!-- 
+          Input field element, allowing users to enter new tasks
+        -->
+        <input type="text"  id="input-box" placeholder="Add your text">
+        
+        <!-- 
+          Add button element, triggering the addTask function when clicked
+        -->
+        <button onclick="addTask()">Add</button>
+      </div>
+      
+      <!-- 
+        Unordered list element, containing the task list
+      -->
+      <ul id="list-container">
+        <!-- 
+          Commented out example list items
+        -->
+        <!-- <li class="checked"> Task 1</li>
+        <li> Task 2</li>
+        <li> Task 3</li> -->
+      </ul>
+    </div>
+  </div>
+  
+  <!-- 
+    Script tag, linking to the external JavaScript file (script.js)
+  -->
+  <script src="script.js"></script>
+</body>
+</html>
